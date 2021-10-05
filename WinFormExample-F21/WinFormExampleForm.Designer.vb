@@ -27,6 +27,7 @@ Partial Class WinFormExampleForm
         Me.UserInputTextBox = New System.Windows.Forms.TextBox()
         Me.UserInputLabel = New System.Windows.Forms.Label()
         Me.UpdateButton = New System.Windows.Forms.Button()
+        Me.DisplayLabel = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'HelloButton
@@ -40,6 +41,7 @@ Partial Class WinFormExampleForm
         '
         'ExitButton
         '
+        Me.ExitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.ExitButton.Location = New System.Drawing.Point(371, 165)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(165, 103)
@@ -72,6 +74,14 @@ Partial Class WinFormExampleForm
         Me.UpdateButton.Text = "&Update"
         Me.UpdateButton.UseVisualStyleBackColor = True
         '
+        'DisplayLabel
+        '
+        Me.DisplayLabel.Location = New System.Drawing.Point(67, 46)
+        Me.DisplayLabel.Name = "DisplayLabel"
+        Me.DisplayLabel.Size = New System.Drawing.Size(340, 100)
+        Me.DisplayLabel.TabIndex = 4
+        Me.DisplayLabel.Text = "L"
+        '
         'WinFormExampleForm
         '
         Me.AcceptButton = Me.UpdateButton
@@ -79,6 +89,7 @@ Partial Class WinFormExampleForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.ExitButton
         Me.ClientSize = New System.Drawing.Size(548, 280)
+        Me.Controls.Add(Me.DisplayLabel)
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.UserInputLabel)
         Me.Controls.Add(Me.UserInputTextBox)
@@ -97,4 +108,5 @@ Partial Class WinFormExampleForm
     Friend WithEvents UserInputTextBox As TextBox
     Friend WithEvents UserInputLabel As Label
     Friend WithEvents UpdateButton As Button
+    Friend WithEvents DisplayLabel As Label
 End Class

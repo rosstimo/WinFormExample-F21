@@ -10,6 +10,11 @@
     End Sub
 
     Private Sub UpdateButton_Click(sender As Object, e As EventArgs) Handles UpdateButton.Click
-        Me.Text = UserInputTextBox.Text
+        'Me.Text = UserInputTextBox.Text
+        DisplayLabel.Text &= UserInputTextBox.Text & vbNewLine
+    End Sub
+
+    Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click
+        DisplayLabel.Text = ""
     End Sub
 End Class

@@ -42,9 +42,9 @@ Partial Class WinFormExampleForm
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.BottomCheckBox = New System.Windows.Forms.CheckBox()
+        Me.MiddleCheckBox = New System.Windows.Forms.CheckBox()
+        Me.TopCheckBox = New System.Windows.Forms.CheckBox()
         Me.BottomRadioButton = New System.Windows.Forms.RadioButton()
         Me.MiddleRadioButton = New System.Windows.Forms.RadioButton()
         Me.TopRadioButton = New System.Windows.Forms.RadioButton()
@@ -239,9 +239,9 @@ Partial Class WinFormExampleForm
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.CheckBox3)
-        Me.GroupBox3.Controls.Add(Me.CheckBox2)
-        Me.GroupBox3.Controls.Add(Me.CheckBox1)
+        Me.GroupBox3.Controls.Add(Me.BottomCheckBox)
+        Me.GroupBox3.Controls.Add(Me.MiddleCheckBox)
+        Me.GroupBox3.Controls.Add(Me.TopCheckBox)
         Me.GroupBox3.Controls.Add(Me.BottomRadioButton)
         Me.GroupBox3.Controls.Add(Me.MiddleRadioButton)
         Me.GroupBox3.Controls.Add(Me.TopRadioButton)
@@ -253,35 +253,35 @@ Partial Class WinFormExampleForm
         Me.GroupBox3.Text = "GroupBox3"
         Me.ToolTip.SetToolTip(Me.GroupBox3, "Please make a selection")
         '
-        'CheckBox3
+        'BottomCheckBox
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(148, 66)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox3.TabIndex = 5
-        Me.CheckBox3.Text = "CheckBox3"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.BottomCheckBox.AutoSize = True
+        Me.BottomCheckBox.Location = New System.Drawing.Point(148, 66)
+        Me.BottomCheckBox.Name = "BottomCheckBox"
+        Me.BottomCheckBox.Size = New System.Drawing.Size(59, 17)
+        Me.BottomCheckBox.TabIndex = 5
+        Me.BottomCheckBox.Text = "Bottom"
+        Me.BottomCheckBox.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'MiddleCheckBox
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(148, 43)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox2.TabIndex = 4
-        Me.CheckBox2.Text = "CheckBox2"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.MiddleCheckBox.AutoSize = True
+        Me.MiddleCheckBox.Location = New System.Drawing.Point(148, 43)
+        Me.MiddleCheckBox.Name = "MiddleCheckBox"
+        Me.MiddleCheckBox.Size = New System.Drawing.Size(57, 17)
+        Me.MiddleCheckBox.TabIndex = 4
+        Me.MiddleCheckBox.Text = "Middle"
+        Me.MiddleCheckBox.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'TopCheckBox
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(148, 20)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(81, 17)
-        Me.CheckBox1.TabIndex = 3
-        Me.CheckBox1.Text = "CheckBox1"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.TopCheckBox.AutoSize = True
+        Me.TopCheckBox.Location = New System.Drawing.Point(148, 20)
+        Me.TopCheckBox.Name = "TopCheckBox"
+        Me.TopCheckBox.Size = New System.Drawing.Size(45, 17)
+        Me.TopCheckBox.TabIndex = 3
+        Me.TopCheckBox.Text = "Top"
+        Me.TopCheckBox.UseVisualStyleBackColor = True
         '
         'BottomRadioButton
         '
@@ -367,12 +367,12 @@ Partial Class WinFormExampleForm
     Friend WithEvents NumberLabel As Label
     Friend WithEvents LastNameTextBox As TextBox
     Friend WithEvents LastNameLabel As Label
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents TopCheckBox As CheckBox
     Friend WithEvents BottomRadioButton As RadioButton
     Friend WithEvents MiddleRadioButton As RadioButton
     Friend WithEvents TopRadioButton As RadioButton
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents BottomCheckBox As CheckBox
+    Friend WithEvents MiddleCheckBox As CheckBox
     Friend WithEvents CheckBox4 As CheckBox
     Friend WithEvents CheckBox5 As CheckBox
     Friend WithEvents CheckBox6 As CheckBox
